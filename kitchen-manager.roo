@@ -1,0 +1,47 @@
+project --topLevelPackage strombotne.spencer.kitchenmanager --projectName "Kitchen-Manager"
+
+persistence setup --provider HIBERNATE --database MYSQL --databaseName kitchen_manager --userName root
+
+enum type --class ~.domain.IngredientType
+enum constant --name Vegetable
+enum constant --name Fruit
+enum constant --name Meat
+enum constant --name Dairy
+enum constant --name Grain
+enum constant --name Baking
+enum constant --name Herbs
+enum constant --name Spices
+enum constant --name Condiments
+
+// domain.Ingredient
+entity --class ~.domain.Ingredient --testAutomatically
+field string --fieldName displayName --notNull
+field enum --fieldName type --type ~.domain.IngredientType
+field date --fieldName created --type java.util.Date
+
+// domain.Recipe
+entity --class ~.domain.Recipe --testAutomatically
+field string --fieldName displayName --notNull --sizeMax 50 --sizeMin 2
+field string --fieldName description --sizeMax 256
+field set --fieldName ingredients --type ~.domain.Ingredient
+field date --fieldName created --type java.util.Date
+
+// domain.Role (Spring Security Authorities)
+entity --class ~.domain.UserAuthority --testAutomatically
+field string --fieldName authorityName --notNull --sizeMax 50 --class ~.domain.UserAuthority
+
+// domain.User
+entity --class ~.domain.Login --testAutomatically
+field string --fieldName username --notNull --sizeMin 3 --sizeMax 15
+field string --fieldName password --sizeMax 100
+field boolean --fieldName enabled --notNull true
+field set --fieldName userAuthorities --type ~.domain.UserAuthority --cardinality MANY_TO_MANY --class ~.domain.Login
+
+web mvc setup
+
+//scaffold controllers
+web mvc all --package ~.web
+
+//logging setup --package WEB --level DEBUG
+
+//security setup

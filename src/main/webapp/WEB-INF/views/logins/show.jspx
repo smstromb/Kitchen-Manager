@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_strombotne_spencer_kitchenmanager_domain_Login" object="${login}" path="/logins" z="ql9MWtjbxWb2NT0a18UI4vF7FlU=">
+        <field:display field="username" id="s_strombotne_spencer_kitchenmanager_domain_Login_username" object="${login}" z="7R8FKJrpSAZ0Nhzg1Y6esYkVLVs="/>
+        <field:display field="password" id="s_strombotne_spencer_kitchenmanager_domain_Login_password" object="${login}" z="ibAQUECrgTgqC/Jg8qQpjyJ3HbM="/>
+        <field:display field="enabled" id="s_strombotne_spencer_kitchenmanager_domain_Login_enabled" object="${login}" z="l4bb6cSwmO0gMjeaf8zN/BtDI4o="/>
+        <field:display field="userAuthorities" id="s_strombotne_spencer_kitchenmanager_domain_Login_userAuthorities" object="${login}" z="QiGfp6e6PvFinVSW25mCg1b6NPQ="/>
+    </page:show>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_strombotne_spencer_kitchenmanager_domain_Login" items="${logins}" z="MI2+QkaREALHVO0lUdQlhokPZYE=">
+        <table:table data="${logins}" id="l_strombotne_spencer_kitchenmanager_domain_Login" path="/logins" z="DT1sU8sCtq/iwbeU991tmZSTOWw=">
+            <table:column id="c_strombotne_spencer_kitchenmanager_domain_Login_username" property="username" z="wG8HjbDGNuXrFFHJ7uE7v/EHuWA="/>
+            <table:column id="c_strombotne_spencer_kitchenmanager_domain_Login_password" property="password" z="J8U9ArzzpdIldrQ3QLx3UbQt0B8="/>
+            <table:column id="c_strombotne_spencer_kitchenmanager_domain_Login_enabled" property="enabled" z="Rmf3P3IoVARba+h2orsp+/HnoFo="/>
+            <table:column id="c_strombotne_spencer_kitchenmanager_domain_Login_userAuthorities" property="userAuthorities" z="rYX1RFE4uGHB+SufJ/9+yyAyKak="/>
+        </table:table>
+    </page:list>
+</div>

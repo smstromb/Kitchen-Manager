@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_strombotne_spencer_kitchenmanager_domain_Recipe" modelAttribute="recipe" path="/recipes" render="${empty dependencies}" z="0lzHaa+htzj0UEzUguYGKIUIE+w=">
+        <field:textarea field="displayName" id="c_strombotne_spencer_kitchenmanager_domain_Recipe_displayName" required="true" z="Q041DMlkElc6eg8MgTnxWtNhAZE="/>
+        <field:textarea field="description" id="c_strombotne_spencer_kitchenmanager_domain_Recipe_description" z="gn+edMmw8Cl54SbKuKnu2YBDHcA="/>
+        <field:select field="ingredients" id="c_strombotne_spencer_kitchenmanager_domain_Recipe_ingredients" itemValue="id" items="${ingredients}" multiple="true" path="/ingredients" z="1USsomLptd9GqikYPrM+oJkXHsE="/>
+        <field:datetime dateTimePattern="${recipe_created_date_format}" field="created" id="c_strombotne_spencer_kitchenmanager_domain_Recipe_created" z="yibUKWGQuS6YEXB388cAj7m4yaE="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_strombotne_spencer_kitchenmanager_domain_Recipe" render="${not empty dependencies}" z="hlUPWg89s/cFHtebNH5jafsVHyA="/>
+</div>
