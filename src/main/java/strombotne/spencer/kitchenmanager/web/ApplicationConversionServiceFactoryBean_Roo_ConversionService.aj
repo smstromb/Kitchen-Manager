@@ -27,7 +27,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     
     static class strombotne.spencer.kitchenmanager.web.ApplicationConversionServiceFactoryBean.IngredientConverter implements Converter<Ingredient, String> {
         public String convert(Ingredient ingredient) {
-            return new StringBuilder().append(ingredient.getDisplayName()).append(" ").append(ingredient.getCreated()).toString();
+            return new StringBuilder().append(ingredient.getDisplayName()).toString();
         }
         
     }
@@ -41,7 +41,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     
     static class strombotne.spencer.kitchenmanager.web.ApplicationConversionServiceFactoryBean.RecipeConverter implements Converter<Recipe, String> {
         public String convert(Recipe recipe) {
-            return new StringBuilder().append(recipe.getDisplayName()).append(" ").append(recipe.getDescription()).append(" ").append(recipe.getCreated()).toString();
+            return new StringBuilder().append(recipe.getDisplayName()).append(" ").append(recipe.getDescription()).toString();
         }
         
     }

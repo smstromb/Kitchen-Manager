@@ -5,6 +5,5 @@
     <form:update id="fu_strombotne_spencer_kitchenmanager_domain_Ingredient" modelAttribute="ingredient" path="/ingredients" versionField="Version" z="oLICeAz6TFHsy1jRjF5wWTgVDIk=">
         <field:input field="displayName" id="c_strombotne_spencer_kitchenmanager_domain_Ingredient_displayName" required="true" z="t4okSfOrFyuR3tSHgziv8M3D16o="/>
         <field:select field="type" id="c_strombotne_spencer_kitchenmanager_domain_Ingredient_type" items="${ingredienttypes}" path="ingredienttypes" z="sVkesdDtfUpTZ2rSMU+KS3GzoqQ="/>
-        <field:datetime dateTimePattern="${ingredient_created_date_format}" field="created" id="c_strombotne_spencer_kitchenmanager_domain_Ingredient_created" z="5YtaMWFMpVPiwz6w6vbMdHswlxM="/>
     </form:update>
 </div>

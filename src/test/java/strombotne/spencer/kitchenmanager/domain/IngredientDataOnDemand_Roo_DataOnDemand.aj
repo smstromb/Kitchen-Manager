@@ -6,9 +6,6 @@ package strombotne.spencer.kitchenmanager.domain;
 import java.lang.String;
 import java.security.SecureRandom;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
@@ -28,15 +25,9 @@ privileged aspect IngredientDataOnDemand_Roo_DataOnDemand {
     
     public Ingredient IngredientDataOnDemand.getNewTransientIngredient(int index) {
         Ingredient obj = new Ingredient();
-        setCreated(obj, index);
         setDisplayName(obj, index);
         setType(obj, index);
         return obj;
-    }
-    
-    public void IngredientDataOnDemand.setCreated(Ingredient obj, int index) {
-        Date created = new GregorianCalendar(Calendar.getInstance().get(Calendar.YEAR), Calendar.getInstance().get(Calendar.MONTH), Calendar.getInstance().get(Calendar.DAY_OF_MONTH), Calendar.getInstance().get(Calendar.HOUR_OF_DAY), Calendar.getInstance().get(Calendar.MINUTE), Calendar.getInstance().get(Calendar.SECOND) + new Double(Math.random() * 1000).intValue()).getTime();
-        obj.setCreated(created);
     }
     
     public void IngredientDataOnDemand.setDisplayName(Ingredient obj, int index) {

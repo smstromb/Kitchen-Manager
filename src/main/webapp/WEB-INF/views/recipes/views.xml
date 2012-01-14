@@ -13,4 +13,19 @@
 <definition extends="default" name="recipes/update">
         <put-attribute name="body" value="/WEB-INF/views/recipes/update.jspx"/>
     </definition>
+<definition extends="default" name="recipes/findRecipesByIngredients">
+        <put-attribute name="body" value="/WEB-INF/views/recipes/findRecipesByIngredients.jspx"/>
+    </definition>
+<definition extends="default" name="recipes/findRecipesByDescriptionLike">
+        <put-attribute name="body" value="/WEB-INF/views/recipes/findRecipesByDescriptionLike.jspx"/>
+    </definition>
+<definition extends="default" name="recipes/findRecipesByDescriptionEquals">
+        <put-attribute name="body" value="/WEB-INF/views/recipes/findRecipesByDescriptionEquals.jspx"/>
+    </definition>
+<definition extends="default" name="recipes/findRecipesByDisplayNameLike">
+        <put-attribute name="body" value="/WEB-INF/views/recipes/findRecipesByDisplayNameLike.jspx"/>
+    </definition>
+<definition extends="default" name="recipes/findRecipesByDisplayNameEquals">
+        <put-attribute name="body" value="/WEB-INF/views/recipes/findRecipesByDisplayNameEquals.jspx"/>
+    </definition>
 </tiles-definitions>

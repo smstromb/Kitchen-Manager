@@ -6,6 +6,5 @@
         <field:display field="displayName" id="s_strombotne_spencer_kitchenmanager_domain_Recipe_displayName" object="${recipe}" z="jFsY8vCy9SfcgnqNzyFwcDjhnss="/>
         <field:display field="description" id="s_strombotne_spencer_kitchenmanager_domain_Recipe_description" object="${recipe}" z="ADdAVaLa+wCfRh2hW2YSug4W+5w="/>
         <field:display field="ingredients" id="s_strombotne_spencer_kitchenmanager_domain_Recipe_ingredients" object="${recipe}" z="hAMiBGfu/VBXVhK1weAVnYzBjpo="/>
-        <field:display date="true" dateTimePattern="${recipe_created_date_format}" field="created" id="s_strombotne_spencer_kitchenmanager_domain_Recipe_created" object="${recipe}" z="9HP3H3/WDoGRvIeinScoJRnOUzs="/>
     </page:show>
 </div>

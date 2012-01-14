@@ -6,6 +6,5 @@
         <field:textarea field="displayName" id="c_strombotne_spencer_kitchenmanager_domain_Recipe_displayName" required="true" z="Q041DMlkElc6eg8MgTnxWtNhAZE="/>
         <field:textarea field="description" id="c_strombotne_spencer_kitchenmanager_domain_Recipe_description" z="gn+edMmw8Cl54SbKuKnu2YBDHcA="/>
         <field:select field="ingredients" id="c_strombotne_spencer_kitchenmanager_domain_Recipe_ingredients" itemValue="id" items="${ingredients}" multiple="true" path="/ingredients" z="1USsomLptd9GqikYPrM+oJkXHsE="/>
-        <field:datetime dateTimePattern="${recipe_created_date_format}" field="created" id="c_strombotne_spencer_kitchenmanager_domain_Recipe_created" z="yibUKWGQuS6YEXB388cAj7m4yaE="/>
     </form:update>
 </div>

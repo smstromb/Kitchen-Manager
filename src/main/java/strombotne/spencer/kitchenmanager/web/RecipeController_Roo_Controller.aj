@@ -10,8 +10,6 @@ import java.lang.String;
 import java.util.Collection;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-import org.joda.time.format.DateTimeFormat;
-import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -30,7 +28,6 @@ privileged aspect RecipeController_Roo_Controller {
     public String RecipeController.create(@Valid Recipe recipe, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("recipe", recipe);
-            addDateTimeFormatPatterns(uiModel);
             return "recipes/create";
         }
         uiModel.asMap().clear();
@@ -41,13 +38,11 @@ privileged aspect RecipeController_Roo_Controller {
     @RequestMapping(params = "form", method = RequestMethod.GET)
     public String RecipeController.createForm(Model uiModel) {
         uiModel.addAttribute("recipe", new Recipe());
-        addDateTimeFormatPatterns(uiModel);
         return "recipes/create";
     }
     
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public String RecipeController.show(@PathVariable("id") Long id, Model uiModel) {
-        addDateTimeFormatPatterns(uiModel);
         uiModel.addAttribute("recipe", Recipe.findRecipe(id));
         uiModel.addAttribute("itemId", id);
         return "recipes/show";
@@ -63,7 +58,6 @@ privileged aspect RecipeController_Roo_Controller {
         } else {
             uiModel.addAttribute("recipes", Recipe.findAllRecipes());
         }
-        addDateTimeFormatPatterns(uiModel);
         return "recipes/list";
     }
     
@@ -71,7 +65,6 @@ privileged aspect RecipeController_Roo_Controller {
     public String RecipeController.update(@Valid Recipe recipe, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("recipe", recipe);
-            addDateTimeFormatPatterns(uiModel);
             return "recipes/update";
         }
         uiModel.asMap().clear();
@@ -82,7 +75,6 @@ privileged aspect RecipeController_Roo_Controller {
     @RequestMapping(value = "/{id}", params = "form", method = RequestMethod.GET)
     public String RecipeController.updateForm(@PathVariable("id") Long id, Model uiModel) {
         uiModel.addAttribute("recipe", Recipe.findRecipe(id));
-        addDateTimeFormatPatterns(uiModel);
         return "recipes/update";
     }
     
@@ -103,10 +95,6 @@ privileged aspect RecipeController_Roo_Controller {
     @ModelAttribute("recipes")
     public Collection<Recipe> RecipeController.populateRecipes() {
         return Recipe.findAllRecipes();
-    }
-    
-    void RecipeController.addDateTimeFormatPatterns(Model uiModel) {
-        uiModel.addAttribute("recipe_created_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
     }
     
     String RecipeController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

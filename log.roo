@@ -47,3 +47,41 @@ exit
 logging setup --level INFO
 exit
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-01-12 22:29:06
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-01-13 17:47:12
+focus --class ~.web.RecipeController
+// [failed] finder list
+focus --class ~.domain.Ingredient
+finder list
+focus --class ~.domain.Recipe
+finder list
+finder add --finderName findRecipesByIngredients
+finder add --finderName fi
+help finder add
+finder list
+finder add --finderName findRecipesByDescriptionLike
+finder add --finderName findRecipesByDescriptionEquals
+finder add --finderName findRecipesByDisplayNameLike
+finder add --finderName findRecipesByDisplayNameEquals
+finder list
+focus --class ~.domain.Ingredient
+finder list
+finder add --finderName findIngredientsByDisplayNameEquals
+finder add --finderName findIngredientsByDisplayNameLike
+finder add --finderName findIngredientsByType
+logging setup --level INFO --package WEB
+hint
+hint topics
+hint jpa
+hint persistance
+hint persistence
+hint jpa
+hint persistence setup
+hint topics
+hint general
+help
+reference guide
+exit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-01-13 18:17:33
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-01-13 18:39:49
+exit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-01-13 18:43:01

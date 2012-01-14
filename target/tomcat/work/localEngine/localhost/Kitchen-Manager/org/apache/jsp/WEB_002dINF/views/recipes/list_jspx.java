@@ -178,30 +178,6 @@ public final class list_jspx extends org.apache.jasper.runtime.HttpJspBase
     return false;
   }
 
-  private boolean _jspx_meth_table_005fcolumn_005f3(javax.servlet.jsp.tagext.JspTag _jspx_parent, PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  table:column
-    org.apache.jsp.tag.web.form.fields.column_tagx _jspx_th_table_005fcolumn_005f3 = new org.apache.jsp.tag.web.form.fields.column_tagx();
-    org.apache.jasper.runtime.AnnotationHelper.postConstruct(_jsp_annotationprocessor, _jspx_th_table_005fcolumn_005f3);
-    _jspx_th_table_005fcolumn_005f3.setJspContext(_jspx_page_context);
-    _jspx_th_table_005fcolumn_005f3.setParent(_jspx_parent);
-    // /WEB-INF/views/recipes/list.jspx(10,203) name = z type = java.lang.String reqTime = true required = false fragment = false deferredValue = false expectedTypeName = java.lang.String deferredMethod = false methodSignature = null
-    _jspx_th_table_005fcolumn_005f3.setZ("MjRPIO5q4AjMC7/KcgLI2SNuPyA=");
-    // /WEB-INF/views/recipes/list.jspx(10,203) name = property type = java.lang.String reqTime = true required = true fragment = false deferredValue = false expectedTypeName = java.lang.String deferredMethod = false methodSignature = null
-    _jspx_th_table_005fcolumn_005f3.setProperty("created");
-    // /WEB-INF/views/recipes/list.jspx(10,203) name = id type = java.lang.String reqTime = true required = true fragment = false deferredValue = false expectedTypeName = java.lang.String deferredMethod = false methodSignature = null
-    _jspx_th_table_005fcolumn_005f3.setId("c_strombotne_spencer_kitchenmanager_domain_Recipe_created");
-    // /WEB-INF/views/recipes/list.jspx(10,203) name = dateTimePattern type = java.lang.String reqTime = true required = false fragment = false deferredValue = false expectedTypeName = java.lang.String deferredMethod = false methodSignature = null
-    _jspx_th_table_005fcolumn_005f3.setDateTimePattern((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${recipe_created_date_format}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-    // /WEB-INF/views/recipes/list.jspx(10,203) name = date type = java.lang.Boolean reqTime = true required = false fragment = false deferredValue = false expectedTypeName = java.lang.String deferredMethod = false methodSignature = null
-    _jspx_th_table_005fcolumn_005f3.setDate(new Boolean(true));
-    _jspx_th_table_005fcolumn_005f3.doTag();
-    org.apache.jasper.runtime.AnnotationHelper.preDestroy(_jsp_annotationprocessor, _jspx_th_table_005fcolumn_005f3);
-    return false;
-  }
-
   private class Helper
       extends org.apache.jasper.runtime.JspFragmentHelper
   {
@@ -228,8 +204,6 @@ public final class list_jspx extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_table_005fcolumn_005f1(_jspx_parent, _jspx_page_context))
         return true;
       if (_jspx_meth_table_005fcolumn_005f2(_jspx_parent, _jspx_page_context))
-        return true;
-      if (_jspx_meth_table_005fcolumn_005f3(_jspx_parent, _jspx_page_context))
         return true;
       return false;
     }

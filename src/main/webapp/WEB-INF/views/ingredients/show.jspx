@@ -5,6 +5,5 @@
     <page:show id="ps_strombotne_spencer_kitchenmanager_domain_Ingredient" object="${ingredient}" path="/ingredients" z="q7OKuTEFz/naL/fCx94pNu06xow=">
         <field:display field="displayName" id="s_strombotne_spencer_kitchenmanager_domain_Ingredient_displayName" object="${ingredient}" z="2WuJlPFKoNo2H71HYGzg2uM3SME="/>
         <field:display field="type" id="s_strombotne_spencer_kitchenmanager_domain_Ingredient_type" object="${ingredient}" z="vP5FtcbFFofaFSf/JDL0lVhsG7k="/>
-        <field:display date="true" dateTimePattern="${ingredient_created_date_format}" field="created" id="s_strombotne_spencer_kitchenmanager_domain_Ingredient_created" object="${ingredient}" z="hz/zyhvbU+dnseiSLz5rxyETHqo="/>
     </page:show>
 </div>

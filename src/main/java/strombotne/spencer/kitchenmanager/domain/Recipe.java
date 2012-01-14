@@ -17,7 +17,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 @RooJavaBean
 @RooToString
-@RooEntity
+@RooEntity(finders = { "findRecipesByIngredients", "findRecipesByDescriptionLike", "findRecipesByDescriptionEquals", "findRecipesByDisplayNameLike", "findRecipesByDisplayNameEquals" })
 public class Recipe {
 
     @NotNull
@@ -29,8 +29,4 @@ public class Recipe {
 
     @ManyToMany(cascade = CascadeType.ALL)
     private Set<Ingredient> ingredients = new HashSet<Ingredient>();
-
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date created;
 }

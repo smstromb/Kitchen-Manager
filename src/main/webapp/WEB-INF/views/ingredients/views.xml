@@ -13,4 +13,13 @@
 <definition extends="default" name="ingredients/update">
         <put-attribute name="body" value="/WEB-INF/views/ingredients/update.jspx"/>
     </definition>
+<definition extends="default" name="ingredients/findIngredientsByDisplayNameEquals">
+        <put-attribute name="body" value="/WEB-INF/views/ingredients/findIngredientsByDisplayNameEquals.jspx"/>
+    </definition>
+<definition extends="default" name="ingredients/findIngredientsByDisplayNameLike">
+        <put-attribute name="body" value="/WEB-INF/views/ingredients/findIngredientsByDisplayNameLike.jspx"/>
+    </definition>
+<definition extends="default" name="ingredients/findIngredientsByType">
+        <put-attribute name="body" value="/WEB-INF/views/ingredients/findIngredientsByType.jspx"/>
+    </definition>
 </tiles-definitions>

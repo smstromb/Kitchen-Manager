@@ -9,7 +9,6 @@ privileged aspect Ingredient_Roo_ToString {
     
     public String Ingredient.toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Created: ").append(getCreated()).append(", ");
         sb.append("DisplayName: ").append(getDisplayName()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Type: ").append(getType()).append(", ");

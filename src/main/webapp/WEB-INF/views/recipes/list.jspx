@@ -7,7 +7,6 @@
             <table:column id="c_strombotne_spencer_kitchenmanager_domain_Recipe_displayName" property="displayName" z="sK/VXJr0fQGISZDg+WKyai7jq/4="/>
             <table:column id="c_strombotne_spencer_kitchenmanager_domain_Recipe_description" property="description" z="3fwogrkdfoiHXj5WiwqxCZOpddQ="/>
             <table:column id="c_strombotne_spencer_kitchenmanager_domain_Recipe_ingredients" property="ingredients" z="giMo5cdLJrhfnj9btM8yuVWTZmU="/>
-            <table:column date="true" dateTimePattern="${recipe_created_date_format}" id="c_strombotne_spencer_kitchenmanager_domain_Recipe_created" property="created" z="MjRPIO5q4AjMC7/KcgLI2SNuPyA="/>
         </table:table>
     </page:list>
 </div>

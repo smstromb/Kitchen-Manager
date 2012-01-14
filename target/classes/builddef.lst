@@ -13,12 +13,14 @@ UTF-8
 /Users/smstromb/Dev/Workspace/sandbox/target/classes
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/web/RecipeController.java
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/Login_Roo_Entity.aj
+/Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/Ingredient_Roo_Finder.aj
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/Recipe.java
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/UserAuthority_Roo_ToString.aj
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/Login_Roo_JavaBean.aj
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/Login_Roo_ToString.aj
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/Recipe_Roo_ToString.aj
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/Recipe_Roo_Entity.aj
+/Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/Recipe_Roo_Finder.aj
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/web/RecipeController_Roo_Controller.aj
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/Ingredient_Roo_Configurable.aj
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/Login_Roo_Configurable.aj
@@ -27,6 +29,7 @@ UTF-8
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/UserAuthority_Roo_JavaBean.aj
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/web/LoginController_Roo_Controller.aj
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/web/UserAuthorityController.java
+/Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/web/IngredientController_Roo_Controller_Finder.aj
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/web/LoginController.java
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/UserAuthority.java
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/UserAuthority_Roo_Entity.aj
@@ -42,3 +45,4 @@ UTF-8
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/Ingredient_Roo_Entity.aj
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/web/UserAuthorityController_Roo_Controller.aj
 /Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/domain/UserAuthority_Roo_Configurable.aj
+/Users/smstromb/Dev/Workspace/sandbox/src/main/java/strombotne/spencer/kitchenmanager/web/RecipeController_Roo_Controller_Finder.aj

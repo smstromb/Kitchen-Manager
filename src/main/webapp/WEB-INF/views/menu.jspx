@@ -10,10 +10,18 @@
         <menu:category id="c_ingredient" z="de19E8GCQu3hZjuVuBSOyG4K1DM=">
             <menu:item id="i_ingredient_new" messageCode="global_menu_new" url="/ingredients?form" z="MpogjMgYuSDuUYjk+irK39MAyWc="/>
             <menu:item id="i_ingredient_list" messageCode="global_menu_list" url="/ingredients?page=1&amp;size=${empty param.size ? 10 : param.size}" z="WkbCrKrZM0xn47YKvMYgZUCcZRQ="/>
+            <menu:item id="fi_ingredient_displaynameequals" messageCode="global_menu_find" url="/ingredients?find=ByDisplayNameEquals&amp;form" z="A223/sDcaw41mhqEV4vKWoeRd8M="/>
+            <menu:item id="fi_ingredient_displaynamelike" messageCode="global_menu_find" url="/ingredients?find=ByDisplayNameLike&amp;form" z="DYMvxdD6Dj7AUe4Wjy7WegriRTY="/>
+            <menu:item id="fi_ingredient_type" messageCode="global_menu_find" url="/ingredients?find=ByType&amp;form" z="CpOsHv/EEbBceaLPmR9Wy2au0nQ="/>
         </menu:category>
         <menu:category id="c_recipe" z="hZplfFy2KodHpP2OufOMr0vsgWE=">
             <menu:item id="i_recipe_new" messageCode="global_menu_new" url="/recipes?form" z="VyGeZtaFke6dAFfcfV6nkiFw8kg="/>
             <menu:item id="i_recipe_list" messageCode="global_menu_list" url="/recipes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="x/kIf6oj+Phyd8ZS4M0loj+E1Ds="/>
+            <menu:item id="fi_recipe_ingredients" messageCode="global_menu_find" url="/recipes?find=ByIngredients&amp;form" z="vO0E6+rx5SjeZpLSFyNBx9EsxPM="/>
+            <menu:item id="fi_recipe_descriptionlike" messageCode="global_menu_find" url="/recipes?find=ByDescriptionLike&amp;form" z="vLgsmWVVVw7xJ3oVjhc1MRNLtaA="/>
+            <menu:item id="fi_recipe_descriptionequals" messageCode="global_menu_find" url="/recipes?find=ByDescriptionEquals&amp;form" z="jhrHliEEtyJA0X9c95fUIosnBXw="/>
+            <menu:item id="fi_recipe_displaynamelike" messageCode="global_menu_find" url="/recipes?find=ByDisplayNameLike&amp;form" z="R/ISzm4uOR7ofViJ766Db/RB2ZY="/>
+            <menu:item id="fi_recipe_displaynameequals" messageCode="global_menu_find" url="/recipes?find=ByDisplayNameEquals&amp;form" z="qTQMnyv716sE5rb0zMNIk2VKydc="/>
         </menu:category>
         <menu:category id="c_login" z="I67OD3gMY60XCf6wlwUz9yE3Mfc=">
             <menu:item id="i_login_new" messageCode="global_menu_new" url="/logins?form" z="a7VMRoCVOMDJcXfv1tyT46KRrTY="/>

@@ -13,7 +13,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 @RooJavaBean
 @RooToString
-@RooEntity
+@RooEntity(finders = { "findIngredientsByDisplayNameEquals", "findIngredientsByDisplayNameLike", "findIngredientsByType" })
 public class Ingredient {
 
     @NotNull
@@ -22,7 +22,4 @@ public class Ingredient {
     @Enumerated
     private IngredientType type;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
-    private Date created;
 }

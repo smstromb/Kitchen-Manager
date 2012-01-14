@@ -4,7 +4,6 @@
 package strombotne.spencer.kitchenmanager.domain;
 
 import java.lang.String;
-import java.util.Date;
 import strombotne.spencer.kitchenmanager.domain.IngredientType;
 
 privileged aspect Ingredient_Roo_JavaBean {
@@ -23,14 +22,6 @@ privileged aspect Ingredient_Roo_JavaBean {
     
     public void Ingredient.setType(IngredientType type) {
         this.type = type;
-    }
-    
-    public Date Ingredient.getCreated() {
-        return this.created;
-    }
-    
-    public void Ingredient.setCreated(Date created) {
-        this.created = created;
     }
     
 }
