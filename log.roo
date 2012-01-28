@@ -89,3 +89,44 @@ exit
 perform eclipse
 exit
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-01-13 19:15:58
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-01-13 19:49:38
+hint faces
+help
+addon search web jsf
+addon search
+addon search jsf
+addon search face
+addon search mobile
+addon search
+help addon search
+addon search ---maxResults 80
+exit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-01-14 08:59:08
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-01-14 16:09:58
+exit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-01-14 16:10:49
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-01-14 16:10:52
+exit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-01-14 16:12:43
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-01-14 16:12:48
+entity --class ~.domain.IngredientMeta --testAutomatically 
+field string --fieldName displayName --sizeMax 20 --unique 
+enum type --class ~.domain.IngredientGroup
+// [failed] finder list
+hint
+hint enum
+hint enum type
+help enum type
+focus --class ~.domain.IngredientMeta
+// [failed] field reference --fieldName group --type ~.domain.IngredientGroup --notNull
+help field reference
+help field
+// [failed] field enum --fieldName group --type ~.domain.IngredientGroup --notNull 
+help field reference
+field enum --fieldName ingredientGroup --type ~.domain.IngredientGroup --notNull
+entity --class ~.domain.RecipeIngredient --testAutomatically
+help field number
+field number --type java.util.Double --fieldName quantity
+exit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-01-14 16:36:54
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-01-28 10:08:38

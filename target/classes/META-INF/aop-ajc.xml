@@ -1,29 +1,15 @@
 <aspectj>
 <aspects>
 <aspect name="strombotne.spencer.kitchenmanager.domain.UserAuthority_Roo_ToString"/>
-<aspect name="strombotne.spencer.kitchenmanager.domain.Login_Roo_Configurable"/>
-<aspect name="strombotne.spencer.kitchenmanager.web.IngredientController_Roo_Controller_Finder"/>
-<aspect name="strombotne.spencer.kitchenmanager.domain.Login_Roo_Entity"/>
-<aspect name="strombotne.spencer.kitchenmanager.domain.Recipe_Roo_Entity"/>
-<aspect name="strombotne.spencer.kitchenmanager.domain.UserAuthority_Roo_Configurable"/>
-<aspect name="strombotne.spencer.kitchenmanager.domain.Recipe_Roo_Configurable"/>
-<aspect name="strombotne.spencer.kitchenmanager.web.IngredientController_Roo_Controller"/>
-<aspect name="strombotne.spencer.kitchenmanager.domain.Ingredient_Roo_Configurable"/>
-<aspect name="strombotne.spencer.kitchenmanager.domain.Ingredient_Roo_Finder"/>
-<aspect name="strombotne.spencer.kitchenmanager.domain.UserAuthority_Roo_Entity"/>
 <aspect name="strombotne.spencer.kitchenmanager.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
-<aspect name="strombotne.spencer.kitchenmanager.domain.Ingredient_Roo_JavaBean"/>
-<aspect name="strombotne.spencer.kitchenmanager.web.RecipeController_Roo_Controller_Finder"/>
-<aspect name="strombotne.spencer.kitchenmanager.domain.Recipe_Roo_Finder"/>
-<aspect name="strombotne.spencer.kitchenmanager.domain.Recipe_Roo_ToString"/>
+<aspect name="strombotne.spencer.kitchenmanager.domain.UserAuthority_Roo_Entity"/>
+<aspect name="strombotne.spencer.kitchenmanager.domain.Login_Roo_Configurable"/>
+<aspect name="strombotne.spencer.kitchenmanager.domain.Login_Roo_Entity"/>
 <aspect name="strombotne.spencer.kitchenmanager.web.UserAuthorityController_Roo_Controller"/>
-<aspect name="strombotne.spencer.kitchenmanager.domain.Ingredient_Roo_Entity"/>
-<aspect name="strombotne.spencer.kitchenmanager.web.RecipeController_Roo_Controller"/>
+<aspect name="strombotne.spencer.kitchenmanager.domain.UserAuthority_Roo_Configurable"/>
 <aspect name="strombotne.spencer.kitchenmanager.domain.Login_Roo_ToString"/>
 <aspect name="strombotne.spencer.kitchenmanager.domain.UserAuthority_Roo_JavaBean"/>
 <aspect name="strombotne.spencer.kitchenmanager.web.LoginController_Roo_Controller"/>
-<aspect name="strombotne.spencer.kitchenmanager.domain.Ingredient_Roo_ToString"/>
-<aspect name="strombotne.spencer.kitchenmanager.domain.Recipe_Roo_JavaBean"/>
 <aspect name="strombotne.spencer.kitchenmanager.domain.Login_Roo_JavaBean"/>
 </aspects>
 </aspectj>

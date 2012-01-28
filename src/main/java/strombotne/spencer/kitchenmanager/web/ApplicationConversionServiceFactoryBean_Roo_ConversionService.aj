@@ -6,17 +6,13 @@ package strombotne.spencer.kitchenmanager.web;
 import java.lang.String;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.format.FormatterRegistry;
-import strombotne.spencer.kitchenmanager.domain.Ingredient;
 import strombotne.spencer.kitchenmanager.domain.Login;
-import strombotne.spencer.kitchenmanager.domain.Recipe;
 import strombotne.spencer.kitchenmanager.domain.UserAuthority;
 
 privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService {
     
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
-        registry.addConverter(new IngredientConverter());
         registry.addConverter(new LoginConverter());
-        registry.addConverter(new RecipeConverter());
         registry.addConverter(new UserAuthorityConverter());
     }
     
@@ -25,23 +21,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         installLabelConverters(getObject());
     }
     
-    static class strombotne.spencer.kitchenmanager.web.ApplicationConversionServiceFactoryBean.IngredientConverter implements Converter<Ingredient, String> {
-        public String convert(Ingredient ingredient) {
-            return new StringBuilder().append(ingredient.getDisplayName()).toString();
-        }
-        
-    }
-    
     static class strombotne.spencer.kitchenmanager.web.ApplicationConversionServiceFactoryBean.LoginConverter implements Converter<Login, String> {
         public String convert(Login login) {
             return new StringBuilder().append(login.getUsername()).append(" ").append(login.getPassword()).toString();
-        }
-        
-    }
-    
-    static class strombotne.spencer.kitchenmanager.web.ApplicationConversionServiceFactoryBean.RecipeConverter implements Converter<Recipe, String> {
-        public String convert(Recipe recipe) {
-            return new StringBuilder().append(recipe.getDisplayName()).append(" ").append(recipe.getDescription()).toString();
         }
         
     }

@@ -89,10 +89,8 @@ static {
         return;
       if (_jspx_meth_spring_005furl_005f5(_jspx_page_context))
         return;
-      out.write("<link href=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${tundra_url}", java.lang.String.class, (PageContext)this.getJspContext(), null, false) + "\" type=\"text/css\" rel=\"stylesheet\">");
-      out.write("</link>");
-      out.write("<link href=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${roo_css_url}", java.lang.String.class, (PageContext)this.getJspContext(), null, false) + "\" media=\"screen\" type=\"text/css\" rel=\"stylesheet\">");
-      out.write("</link>");
+      out.write("<link href=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${tundra_url}", java.lang.String.class, (PageContext)this.getJspContext(), null, false) + "\" type=\"text/css\" rel=\"stylesheet\"/>");
+      out.write("<link href=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${roo_css_url}", java.lang.String.class, (PageContext)this.getJspContext(), null, false) + "\" media=\"screen\" type=\"text/css\" rel=\"stylesheet\"/>");
       out.write("<link href=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${favicon}", java.lang.String.class, (PageContext)this.getJspContext(), null, false) + "\" rel=\"SHORTCUT ICON\"/>");
       if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
         return;

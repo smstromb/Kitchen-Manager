@@ -1,0 +1,13 @@
+<aspectj>
+<aspects>
+<aspect name="strombotne.spencer.kitchenmanager.domain.LoginDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="strombotne.spencer.kitchenmanager.domain.LoginIntegrationTest_Roo_Configurable"/>
+<aspect name="strombotne.spencer.kitchenmanager.domain.UserAuthorityDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="strombotne.spencer.kitchenmanager.domain.UserAuthorityIntegrationTest_Roo_Configurable"/>
+<aspect name="strombotne.spencer.kitchenmanager.domain.UserAuthorityIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="strombotne.spencer.kitchenmanager.domain.LoginIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="strombotne.spencer.kitchenmanager.domain.UserAuthorityDataOnDemand_Roo_Configurable"/>
+<aspect name="strombotne.spencer.kitchenmanager.domain.LoginDataOnDemand_Roo_Configurable"/>
+</aspects>
+</aspectj>
+
